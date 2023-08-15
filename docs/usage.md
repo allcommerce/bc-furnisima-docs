@@ -481,7 +481,13 @@ Choose **General**, **Style for theme** = `Beautify Furniture`, unchecked `Displ
 Choose **Carousel**, show **Enable carousel**, in **Carousel settings** panel set value **Items per slide** = `4`, **Items per slide (Tablet)** = `4`, **Items per slide (Mobile)** = `2`, unchecked **Show arrows**.
 ### Category Banner
 
+Desktop : 
+
 ![category banner](img/category-banner.jpg)
+
+Mobile : 
+
+![category banner mobile](img/category-banner-mobile.jpg)
 
 Drag & drop **Section Heading | Papathemes Beautify**. Select the layout change column to 1 and change **layout name** = `BOXED`. Typing your text(example "Help yourself to a stylish dining room"), select custom in **Text style** field, **Text style** = `Custom`, **Font weight** = `Semi Bold`, **Font size** and **Font size(Mobile)** = `18px`. Set value **Padding** = `46 0 25 0`, **Padding(Mobile)** = `16 0 18 0`.
 
