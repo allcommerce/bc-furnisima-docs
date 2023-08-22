@@ -151,6 +151,40 @@ Upload the carousel images in **Storefront** > **Home Page Carousel**.
 
 Go back to **Page Builder**, in **Theme Styles** > **Home Page**, make sure **Carousel** > **Show carousel** is selected, unchecked **Show top col** **Show left col** and **Show right col** . You can change the carousel styles and colors here.
 
+#### Left column banner in homepage carousel
+
+![Main-carousel-left-banner](img/left-col-banner.jpg)
+
+To display left banner in Main carousel.
+
+click on **Theme Styles** > **Home Page** > **Carousel** find show **left column** and enable it to open widget region.
+
+Drag & drop layout widget from page builder to corresponding position in **left column**. Change column to 1. Set **margin left** and **margin right** = `0`. Select column 1 and change **padding left** and **padding right** = `0`.
+
+Drag & drop **Flex Banners | PapaThemes Chiara** widget to layout. Delete all banner **except banner 1**. In Banner click on **Image** and upload your image. Change image **width** = `398px` and **height** = `718px`. Unchecked **Hover animation**.
+
+In **General** > **Padding** = `0` for all device. Uncheck **Displpay banners in container div**
+
+To remove border please create custom script as follow.
+
+Go to **Storefront** > **Script Manager**, click **Create a Script**, choose:
+
+- **Placement** = `Footer`
+- **Location** = `Storefront pages`
+- **Script type** = `Script`
+ 
+Enter the script below to Scripts contents:
+ 
+```
+<script>
+(function() {
+var style = document.createElement('style');
+style.innerHTML = '.heroCarousel-left-col{border:none}';
+document.head.appendChild(style);
+})();
+</script>
+```
+
 #### Right column banner in homepage carousel
 ![Main-carousel-right-banner](img/right-banner-main-carousel.jpg)
 
@@ -158,11 +192,12 @@ To display right banner in Main carousel.
 
 Click on **Theme Styles** > **Home Page** > **Carousel** find show **right column** and enable it to open widget region.
  
-Drag & drop layout widget from page builder to corresponding position in **right column**. Change column to 1. Set margin left and right = 0. Select column 1 and change padding left, right = 0.
+Drag & drop layout widget from page builder to corresponding position in **right column**. Change column to 1. Set **margin left** and **margin right** = `0`. Select **column 1** and change **padding left**, **padding right** = `0`.
 
-drag & drop **Flex Banners | PapaThemes Chiara** widget to layout. Delete all banner **except banner 1**. In Banner click on **Image** and upload your image. Change image **width** = `485px` and **height** = `415px`. In General section, set all padding value `0` for all device.
+Drag & drop **Flex Banners | PapaThemes Chiara** widget to layout. Delete all banner except **banner 1**. In Banner click on **Image** and upload your image. Change image **width** = `485px` and **height** = `415px`. In General section, set all padding value `0` for all device.
 
 Duplicate **Flex Banners | PapaThemes Chiara** widget. Select second banner change your **image** and **overlay image**.
+
 ### Categories
 
 Desktop
@@ -175,11 +210,11 @@ Mobile
 
 To create Categories : 
 
-Drag & drop the **Layout widget** to the position **home below carousel**. Select the layout change column to 1 set column 1 with background color you want then change **layout name** = `CATEGORIES`.
+Drag & drop the **Layout widget** to the position **home below carousel**. Select the layout change column to 1 set column 1 with background color you want.
 
 Drag & drop **Flex Banners | PapaThemes Beautify**, to the layout delete all the items except the first one then change to your image change **width** = `178px` and **height** = `246px`. In general tab change padding set value **Desktop** = `20 10 20 10`, **Tablet** = `15 10 15 10`, **Mobile** = `15 15 15 15`.
 
-On **Flex Banners | PapaThemes Beautify** choose setting. In general tab enable **Display banners in container div**, padding set value **Desktop** = `0 0 0 0`, **Tablet** = `0 30 0 30` and **Mobile** =`0 10 0 10`. In carousel tab, enable carousel and click on **setting**. In carousel setting , setup following **Items per slide** = `6`, **tablet** = `4` and **mobile** = `2`. Enable `show dot`.
+On **Flex Banners | PapaThemes Beautify** choose setting. In general tab enable **Display banners in container div**, padding set value **Desktop** = `0 0 0 0`, **Tablet** = `0 30 0 30` and **Mobile** =`0 10 0 10`. In carousel tab, enable carousel and click on **setting**. In carousel setting , setup following **Items per slide** = `6`, **Tablet** = `4` and **Mobile** = `2`. Enable `show dot`.
 
 Duplicate **banner 1** to quantity that you want and update your image for each banner.
 
@@ -191,16 +226,16 @@ You can configure special products tabs section settings in **Page Builder** > *
 
 In **New / Featured / Bestselling Tabs** section, Change **Number of products** = `5` and **Number of products load more on viewport** = `0`. You can change **Default tab** to `Featured`, `Bestselling` or `New`. **Display type** can be changed to `Carousel` or `Grid`. **Show more button**, **featured products**, **bestselling products**, **new products**, **categories** can be enabled by checked box.
 
-### Bread
+### Bread Banner
 Desktop:
 
-![bread-desktop](img/bread.jpg)
+![bread-banner-desktop](img/bread.jpg)
 
 Mobile:
 
-![bread-mobile](img/bread-mobile.jpg)
+![bread-banner-mobile](img/bread-mobile.jpg)
 
-To create **Bread**:
+To create **Bread Banner**:
 
 Drag & drop Layout widget to the corresponding position, change **Column** = `1`, **Name** = `BREAD`.
 
@@ -231,13 +266,13 @@ To create **Left banner**:
 
 Drag & drop the **Flex Banners | PapaThemes Beautify** widget to the corresponding position. Delete all other banners except the first one.
 
-Upload your image in **Image** field. Set **Image Width** = `304px` and **Image Height** `466px`. You can change **Border radius** = `8px`.
+Upload your image in **Image** field. Set **Image Width** = `304px` and **Image Height** =`466px`. You can change **Border radius** = `8px`.
 
 If you want to show different image on mobile please enable **show different image on mobile** upload your image in **Image (Mobile)** field. Set **Image Width (Mobile)** = `401px` and **Image Height (Mobile)** = `295px`.
 
 In **Content**, hide **Heading text** if your banner already has text.
 
-In **General** > **Padding** panel, set `0` for all values and `24` for **bottom (Mobile)**.
+In **General** > **Padding** panel, set `0` for all values then set value `24` for **bottom (Mobile)**.
 
 Select the **Column 1** set padding = `0 0 0 0`.
 
@@ -254,13 +289,15 @@ To create **Banner** :
 
 Drag & drop **Layout** widget to the corresponding position, change **Column** = 1, **Padding** = `0 0 0 0`
 
-Drag & drop **Responsive | PapaThemes** widget into **Colum 1**. **SCREEN SIZE 1** select **Min** =`320px`, **Max** = `550px`, display = `Hide`. Apply set **Apply to** =`Only a layout or`, because of the use of the hidden **banner** feature on mobile devices, the **banner** will not be displayed when in mobile mode.
+Drag & drop **Responsive | PapaThemes** widget into **Colum 1**. 
+
+**SCREEN SIZE 1** select **Min** =`320px`, **Max** = `550px`, display = `Hide`. Apply set **Apply to** =`Only a layout or`, because of the use of the hidden **banner** feature on mobile devices, the **banner** will not be displayed when in mobile mode.
 
 Drag & drop **Flex Banners | PapaThemes Beautify** widget into **Colum 1** below **Responsive** widget. Delete all other banners except the first one.
 
 Upload your image, set **Image width** = `1170px`, **Image height** = `142px`.
 
-In Settings of Flex Banners | PapaThemes Beautify > **General**, set **Padding** value **Desktop and Tablet** =`30 0 30 0`, **Mobile** =`0 0 0 0`.
+In Settings of Flex Banners | PapaThemes Beautify > **General**, set **Padding** value **Desktop and Tablet** =`30 0 30 0`, **Mobile** =`0 0 0 0`. Uncheck **Display banners in container div**
 ### Bestselling products
 
 ![bestselling-products](img/best-selling-product.jpg)
@@ -275,13 +312,11 @@ You can configure bestselling products section settings in **Page Builder** > **
 
 To create **Customer Reviews** : 
 
-Drag & drop **Layout** widget to the corresponding position, change **Column** = `1`, set **Padding** = `0 0 0 0`.
-
 Drag & drop **Customer Reviews | PapaThemes Beautify** widget into **Colum 1**. Delete all other **review** except the first one.
 
 To edit **Review 1**, you can change the **Title**, **Content**, **Rating**, **Author** of **Review** to display, **Style for theme** select `Beautify Furniture`, unchecked **Display reviews in container div**.
 
-Duplicate **review 1** to quantity that you want and update your image for each review.
+Duplicate **review 1** to quantity and change the content you want.
 ### Featured products
 
 ![featured-products](img/feature-product.jpg)
@@ -301,18 +336,18 @@ Mobile :
 
 To create **Three Banners**:
 
-In **Page Builder**, drag & drop **Layout** widget to the corresponding position. Change **Column** = `1`. Drag & drop **Flex Banners | PapaThemes Chiara** widget into **Column 1** and duplicate **Banner 1** to 3 banners.
+Drag & drop **Flex Banners | PapaThemes Chiara** widget into **Column 1** and duplicate **Banner 1** to 3 banners.
 
-To edit **Banner 1**, change your image, set **Image width** = `970`, **Image height** = `486`, select second banner change your image and overlay image.
+To edit **Banner 1**, change your image, set **Image width** = `970px`, **Image height** = `486px`, select second banner change your image and overlay image.
 
-In **General**, choose **Width** = `%`, set **Value (Desktop)** = `50%`, **Value (Tablet)** = `100%`, **Value (Mobile)** = `100%`. Set **Padding** for **Desktop** = `0 30 0 0`, **Tablet** = `0 0 15 0`, **Mobile** = `0 0 15 0`.
+In **General**, choose **Width** = `%`, set **Value (Desktop)** = `50%`, **Value (Tablet)** = `100%`, **Value (Mobile)** = `100%`. Set **Padding** for **Desktop** = `0 30 0 0`, **Tablet** = `0 0 15 0`, **Mobile** = `0 0 15 0`. Uncheck **Display banners in container div**
 
 
 To edit **Banner 2**, change your image, set **Image width** = `530px`, **Image height** = `530px`.
 
-In **General**, choose **Width** = `%`, set **Value (Desktop)** = `25%`, **Value (Tablet)** = `50%`, **Value (Mobile)** = `100%`. Set **Padding** for **Desktop** = `0 15 0 0`, **Tablet** = `0 8 15 0`, **Mobile** = `0 0 15 0`.
+In **General**, choose **Width** = `%`, set **Value (Desktop)** = `25%`, **Value (Tablet)** = `50%`, **Value (Mobile)** = `100%`. Set **Padding** for **Desktop** = `0 15 0 0`, **Tablet** = `0 8 15 0`, **Mobile** = `0 0 15 0`. Uncheck **Display banners in container div**
 
-Set values for **Banner 3** as the same **Banner 2**. In **General** of **Banner 3**, set **Padding** for **Desktop** = `0 0 0 15`, **Tablet** = `0 0 0 8`, **Mobile** = `0 0 0 0`.
+Set values for **Banner 3** as the same **Banner 2**. In **General** of **Banner 3**, set **Padding** for **Desktop** = `0 0 0 15`, **Tablet** = `0 0 0 8`, **Mobile** = `0 0 0 0`. Uncheck **Display banners in container div**
 
 ### New products
 
@@ -388,60 +423,64 @@ You can read these common instructions in **Setting Up Pets Style Home Page** ch
 - [Recent blog posts](#recent-blog-posts)
 - [Instagram photos](#instagram-photos)
 
-### Slider Menu
+### Slider Sale
 
-![slider-menu](img/slider_menu.jpg)
+![slider-sale](img/slider_menu.jpg)
 
-To create **Slider Menu**:
-
-Drag and drop **HTML** widget to the correspoding position.
+Drag & drop **HTML** widget to the correspoding position.
  
-Select **Column 1**, set Padding = `0 0 0 0`.
+Select **Column 1**, set Padding = `0 0 0 0`, 
 
-Select **Layout** with **Name** = `SLIDER_MENU`, set **Layout Background**  to a certain color that you want.
+Seletct **Layout** set **Layout Background**  to a certain color that you want.
 
 Paste the given code below to the HTML editor, then click Save HTML button.
 
 ```html
 <div class="list-ctgry">
-      <a href="#" class="item-ctgry">
-         GAME DAY FURNITURE SALE
-      </a>
-      <a href="#" class="item-ctgry">
-        THE ENTRYWAY SALE
-       </a>
-      <a href="#" class="item-ctgry">
-        THE WHITE SALE
-      </a>
-      <a href="#" class="item-ctgry">
-        OUTDOOR WARM-UP SALE
-      </a>
-        <a href="#" class="item-ctgry">
-           GAME DAY FURNITURE SALE
-        </a>
-      <a href="#" class="item-ctgry">
-        THE ENTRYWAY SALE
-       </a>
-      <a href="#" class="item-ctgry">
-        THE WHITE SALE
-      </a>
-      <a href="#" class="item-ctgry">
-        OUTDOOR WARM-UP SALE
-      </a>
-      <a href="#" class="item-ctgry">
-         GAME DAY FURNITURE SALE
-      </a>
-      <a href="#" class="item-ctgry">
-        THE ENTRYWAY SALE
-     </a>
-      <a href="#" class="item-ctgry">
-        THE WHITE SALE
-      </a>
-      <a href="#" class="item-ctgry">
-        OUTDOOR WARM-UP SALE
-      </a>
-  </div>
+  <a href="#" class="item-ctgry">
+      GAME DAY FURNITURE SALE
+  </a>
+  <a href="#" class="item-ctgry">
+    THE ENTRYWAY SALE
+    </a>
+  <a href="#" class="item-ctgry">
+    THE WHITE SALE
+  </a>
+  <a href="#" class="item-ctgry">
+    OUTDOOR WARM-UP SALE
+  </a>
+    <a href="#" class="item-ctgry">
+        GAME DAY FURNITURE SALE
+    </a>
+  <a href="#" class="item-ctgry">
+    THE ENTRYWAY SALE
+    </a>
+  <a href="#" class="item-ctgry">
+    THE WHITE SALE
+  </a>
+  <a href="#" class="item-ctgry">
+    OUTDOOR WARM-UP SALE
+  </a>
+  <a href="#" class="item-ctgry">
+      GAME DAY FURNITURE SALE
+  </a>
+  <a href="#" class="item-ctgry">
+    THE ENTRYWAY SALE
+  </a>
+  <a href="#" class="item-ctgry">
+    THE WHITE SALE
+  </a>
+  <a href="#" class="item-ctgry">
+    OUTDOOR WARM-UP SALE
+  </a>
+</div>
 ```
+
+To insert the link, simply paste your desired link within the 
+
+`
+<a href="YOUR LINK HERE" class="item-ctgry"> YOUR TEXT HERE </a>
+`
 
 ### Main carousel
 #### Stretch banner in homepage carousel
@@ -450,17 +489,15 @@ Paste the given code below to the HTML editor, then click Save HTML button.
 Choose **Carousel** > **Style** = `Stretched`, **Button style** = `Outline`, **Indicator** = `#E7E7E7`, **Indicator Active** = `#06455E`, unchecked **Show top col**, **Show left col** and **Show right col**
 
 
-### Featured
+### Featured Categories
 
 ![featured](img/featured.jpg)
 
-To create **FEATURED**: 
+Drag and drop **Layout** widget to the corresponding position, change **Column** = `1`. Select **Column 1**, set **Padding** = `0 0 0 0`.
 
-Drag & drop **Layout** widget to the corresponding position, change **Column** = `1`. Select **Column 1**, set **Padding** = `0 0 0 0`.
+Drag & drop **Section Heading | PapaThemes Beautify**. Typing your text (example "**Featured Categories** - Easy living room updates with free ship over $49"), select custom in **Text style** field, set **Font size** and **Font size (Mobile)** = `18px`, **Text color** = `#000000`, set **Padding** = `0 0 0 0`.
 
-Drag & drop **Section Heading | PapaThemes Beautify** widget into **Column 1**. Typing your text (example "**Featured Categories** - Easy living room updates with free ship over $49"), select custom in **Text style** field, set **Font size** and **Font size (Mobile)** = `18px`, **Text color** = `#000000`, set **Padding** = `0 0 0 0`.
-
-Drag & drop **Flex Banners | PapaThemes Beautify** widget to layout. Delete all banner **except banner 1**. 
+Drag & drop **Flex Banners | PapaThemes Beautify** widget into **Column 1** below **Section Heading** widget to layout. Delete all banner **except banner 1**. 
 
 Upload your image, set **Image width** = `375px`, **Image height** = `375px`. If you want to show different image on mobile please enable **Show different image on mobile** upload your image in **Image (Mobile)** field.
 
@@ -472,11 +509,11 @@ In **General**, choose **Width** = `%`, set value **Desktop** = `25%`, **Tablet*
 
 Set **Padding** value **Desktop** = ` 25 15 25 15`, **Tablet** and **Mobile** = `15 10 15 10`.
 
-Duplicate **banner 1** to quantity that you want and update your image for each banner.
+Duplicate **banner 1** to quantity that you want and update your image and content for each banner.
 
 In **Settings** :
 
-Choose **General**, **Style for theme** = `Beautify Furniture`, unchecked `Display banners in container div`
+Choose **General**, **Style for theme** = `Beautify Furniture`, unchecked **Display banners in container div**
 
 Choose **Carousel**, show **Enable carousel**, in **Carousel settings** panel set value **Items per slide** = `4`, **Items per slide (Tablet)** = `4`, **Items per slide (Mobile)** = `2`, unchecked **Show arrows**.
 ### Category Banner
@@ -489,25 +526,27 @@ Mobile :
 
 ![category banner mobile](img/category-banner-mobile.jpg)
 
-Drag & drop **Section Heading | Papathemes Beautify**. Select the layout change column to 1 and change **layout name** = `BOXED`. Typing your text(example "Help yourself to a stylish dining room"), select custom in **Text style** field, **Text style** = `Custom`, **Font weight** = `Semi Bold`, **Font size** and **Font size(Mobile)** = `18px`. Set value **Padding** = `46 0 25 0`, **Padding(Mobile)** = `16 0 18 0`.
+Drag and drop **Layout** widget to the corresponding position, change **Column** = `1`. Select **Column 1**, set **Padding** = `0 0 0 0`.
 
-To create **Category Banner**
+Drag & drop **Section Heading | Papathemes Beautify**. Typing your text(example "Help yourself to a stylish dining room"), select custom in **Text style** field, **Text style** = `Custom`, **Font weight** = `Semi Bold`, **Font size** and **Font size(Mobile)** = `18px`. Set value **Padding** = `46 0 25 0`, **Padding(Mobile)** = `16 0 18 0`.
 
-Drag & drop **Layout** widget to the corresponding position, **Columns** = `2`. **Column layout** with a ratio of `4/12`.
+Drag & drop **Layout** widget , **Columns** = `2`. **Column layout** with a ratio of `4/12`.
 
 **Column 1** :
 
 Drag & drop **Spacer** = `25px`.
 
-Drag & drop **Section Heading | Papathemes Beautify** :
+Drag & drop **Text** :
 
-**Text style** = `Custom`, **Font weight** = `Normal`, **Font size** and **Font size(Mobile)** = `15px`, set value **Padding** = `0 25 20 25`, **Padding(Mobile)** = `0 25 18 25`
+**Text style** = `Custom`, **Font weight** = `Normal`, **Font size** = `15px`, set value **Padding** = `0 25 22 25`.
 
 Drag & drop **Button** : 
 
 In **Button**, set **Padding** = `5 5 5 5`. 
 
 In **Text**, set **Font size** = `12px`, **Text color** = `#000000` and **Text color(hover)** = `#ffffff`.
+
+Drag & drop **Spacer** = `25px`.
 
 **Column 2** :
 
@@ -524,30 +563,23 @@ Mobile :
 
 ![Double Banner Mobile](img/double_banner--mobile.jpg)
 
-To create **Double Banner**
-
-Drag & drop **Layout** widget to the corresponding position, change **Column** = `1`, **Name** = `BOXED`, set **Padding** = `0 0 0 0`.
+Drag and drop **Layout** widget to the corresponding position, change **Column** = `1`. Select **Column 1**, set **Padding** = `0 0 0 0`.
 
 Drag & drop **Flex Banners | PapaThemes Beautify** widget into **Column 1**. Delete all other banners except the first one.
 
 Upload your image, set **Image width** = `737px`, **Image height** = `147px`. If you want to show different image on mobile please enable **Show different image on mobile** upload your image in **Image (Mobile)** field.
 
-Duplicate to 2 banners and upload images according to each banner.
-
 Set **Padding** value **Desktop** = `0 16 0 0`, **Tablet** and **Mobile** = `0 0 20 0`.
 
 In **Settings** of **Flex Banners | PapaThemes Beautify** > **General**, choose **Width** = `%`, set value **Desktop** = `50%`, **Tablet** and **Mobile** = `100%`, unchecked `Diplay banners in container div`.
 
+Duplicate to 2 banners and upload images according to each banner.
 
 ### Brand
 
 ![brand](img/brand.jpg)
 
-To create **Brand**:
-
-Drag & drop **Layout** widget to the corresponding position, change **Column** = `1`, **Name** = `BRAND`.
-
-Select **Column 1**, set **Padding** = `0 0 0 0`.
+Drag and drop **Layout** widget to the corresponding position, change **Column** = `1`. Select **Column 1**, set **Padding** = `0 0 0 0`.
 
 Drag & drop **Section Heading | PapaThemes Beautify** widget into **Column 1** :
 
@@ -557,21 +589,17 @@ Drag & drop **Flex Banners | PapaThemes Beautify** widget to layout. Delete all 
 
 Upload your image, set **Image width** = `278px`, **Image height** = `96px`. If you want to show different image on mobile please enable **Show different image on mobile** upload your image in **Image (Mobile)** field.
 
-Duplicate **banner 1** to quantity that you want and update your image for each banner.
+In **general**, choose **Width** = `%`, set **Value(Desktop)** = `20%`, **Value (Tablet)** = `33,333333%`, **Value (Mobile)** = `50%`. Set **Padding** for **Desktop** = `20 12 20 12`, **Tablet** and **Mobile** = `15 10 15 10`. Uncheck **Display banners in container div**.
 
-In **general**, choose **Width** = `%`, set **Value(Desktop)** = `20%`, **Value (Tablet)** = `33,333333%`, **Value (Mobile)** = `50%`. Set **Padding** for **Desktop** = `20 12 20 12`, **Tablet** and **Mobile** = `15 10 15 10`. Uncheck **Display banners in container div**
+On **Flex Banners | PapaThemes Beautify** choose **Settings**
 
 In **carousel**, show **enable carousel** and click on setting **Items per slide** = `5`, **Items per slide (Tablet)** = `3` and **Items per slide (Mobile)** = `2`. Enable **show dots**.
 
-### Slider Category
+Duplicate **banner 1** to quantity that you want and update your image for each banner.
+### Slider Furnisima
+![Slider Furnisima](img/slider-category.jpg)
 
-![Slider Category](img/slider-category.jpg)
-
-To create **Slider Category**
-
-Drag & drop **Layout** widget to the corresponding position, change **Column** = `1`, **Name** = `SLIDER_CATEGORY`, **Padding** = `0 0 40 0`.
-
-Select **Column 1**, set **Padding** = `0 0 0 0`.
+Drag and drop **Layout** widget to the corresponding position, change **Column** = `1`. Select **Column 1**, set **Padding** = `0 0 0 0`.
 
 Drag & drop **Flex Banners | PapaThemes Beautify** widget to layout. Delete all banner except **banner 1**.
 
@@ -595,9 +623,11 @@ Choose **Width** = `%`, set **Value (Desktop)** = `25%`, **Value (Tablet)** = `3
 
 Set **Padding** for **Desktop and Tablet** = `10 10 10 10`, **Mobile** = `10 5 10 5`.
 
-Duplicate banner 1 to quantity that you want and update your image for each banner.
+Duplicate **banner 1** to quantity and change the content you want.
 
-In **Settings**, **Style for theme** = `Kansha Sport`, unchecked `Display banners in container div`.
+On **Flex Banners | PapaThemes Beautify** choose **Settings** : 
+
+**Style for theme** = `Kansha Sport`, unchecked `Display banners in container div`.
 
 Choose **Carousel** turn on **Enable Carousel**. In carousel setting, **Items per slide** and **Items per slide (Tablet)** = `4`, **Items per slider (Mobile)** = `2`, unchecked **Show arrows**
 
@@ -605,13 +635,11 @@ Choose **Carousel** turn on **Enable Carousel**. In carousel setting, **Items pe
 
 ![live help](img/live_help.jpg)
 
-To create **Live Help** : 
-
-Drag & drop **Layout** widget to the corresponding position, change **Column** = `1`, **Name** = `BOXED`, **Padding** = `0 0 0 0`.
+Drag & drop **Layout** widget to the corresponding position, change **Column** = `1`, **Padding** = `0 0 0 0`.
 
 Drag & drop **Divider**, select **Line color** = `#DEDEDE`, **Line thickness** = `3px`.
 
-Drag & drop **Layout** widget to the corresponding position, change **Column** = `2`, **Name** = `BOXED`, **Padding** = `0 0 0 0`, Column layout with a ratio of `9/12`.
+Drag & drop **Layout** widget below **Divider** widget, change **Column** = `2`, **Padding** = `0 0 0 0`, Column layout with a ratio of `9/12`.
 
 **Column 1** :
 
@@ -621,16 +649,13 @@ Drag & drop **Text**, set **Text style** = `Custom`, **Font weight** = `Medium`,
 
 Drag & drop **Button**, choose **Button** set value **Padding** = `7 21 7 21`, choose **Text** set **Font size** = `14px`.
 
-Choose **Style** set **Button color** = `#06455E`,
-**Button color (hover)** = `#003366`, **Border color** and  **Border color (hover)** = `No Color`, **Border thickness** and **Border radius** = `0px` 
+Choose **Style** set **Button color** = `#06455E`, **Button color (hover)** = `#003366`, **Border color** and  **Border color (hover)** = `No Color`, **Border thickness** and **Border radius** = `0px`
 
 ### Contact
 
 ![Contact](img/contact.jpg)
 
-To create **Contact** :
-
-Drag & drop **Layout** widget below **Live Help**, change **Column** = `1`, **Name** = `CONTACT`, **Padding** = `0 0 0 0`.
+Drag & drop **Layout** widget below **Live Help**, change **Column** = `1`, **Padding** = `0 0 0 0`.
 
 Drag & drop **Callout Icons | Papathemes Beautify** widget to layout. Delete all callout except **callout 1**.
 
@@ -640,20 +665,15 @@ Select **Icon** = `Choose Image`, **Text style** = `Custom`, **Font weight** = `
 
 Tick active **Show second text**, select **Second text style** = `Custom`, **Font size** and **Font size (Mobile)** = `13px`, **Text color** and **Text color hover** = `#000000`. Unchecked **Display icons in container div**.
 
-Duplicate Callout 1 to 4 callout.
+Duplicate **Callout 1** to 4 callout.
 
 ### Newsletter
 
 ![Newsletter](img/newsletter.jpg)
 
-To create **Newsletter** : 
-
 To enable newsletter form, go to **Marketing** > **Email Marketing**, make sure **Allow Newsletter Subscriptions** is checked. Optionally select **Show Newsletter Summary** and enter the summary text as you want.
 
 Go to Page Builder, in **Theme Styles > Footer > Newsletter** section, select **Style** = `Default`. Select **Show store logo** and **Show social icons** = `In newsletter`. Make sure **Show newsletter form** is selected. You can change the **Heading, background color, background image, button** and **text colors**.
-
-
-
 
 ### Footer
 
