@@ -52,26 +52,19 @@ Click on **background color** to change header color.
 
 ![header-backgroundcolor](img/header-bgcolor.jpg)
 
-The theme allow user to change **Logo** > **Position**  to left, right or center.
+The theme allow user to change **Logo** > **Position**  to `left`, `right` or `center`.
 
-**Left**
-
-![header-logo-left](img/logo-position-left.jpg)
-
-**User Navigation** allows to change colors of text, text hover and dropdown have background,border,cart counter.
-
-To display phone and currency select **Show**.
-
-![show-phone-curreny](img/show-phone-currency.jpg)
-
-**Top**
-
-![top-phone-curreny](img/top-phone-currency.jpg)
+**User Navigation** allows to change colors of text, text hover and dropdown have background, border, cart counter.
 
 **Top Bar** section allows to change color of this top bar.
 
-![header-topbar](img/header-topbar.jpg)
+- **Background** : change background color of top bar you want
 
+- **Text** : change text color of top bar you want
+
+- **Text hover** : change text hover color of top bar you want
+
+- **Icon** : change icon color of top bar you want
 #### Quick search
 
 **Quick Search** allows user to change the colors of the search form.
@@ -200,6 +193,10 @@ Duplicate **Flex Banners | PapaThemes Chiara** widget. Select second banner chan
 
 ### Categories
 
+Position **home below carousel** : 
+
+![Home Below Carousel](img/home-below-carousel.jpg)
+
 Desktop
 
 ![Categories](img/top-categories.jpg)
@@ -207,8 +204,6 @@ Desktop
 Mobile
 
 ![Categories](img/top-categories-mobile.jpg)
-
-To create Categories : 
 
 Drag & drop the **Layout widget** to the position **home below carousel**. Select the layout change column to 1 set column 1 with background color you want.
 
@@ -291,7 +286,7 @@ Drag & drop **Layout** widget to the corresponding position, change **Column** =
 
 Drag & drop **Responsive | PapaThemes** widget into **Colum 1**. 
 
-**SCREEN SIZE 1** select **Min** =`320px`, **Max** = `550px`, display = `Hide`. Apply set **Apply to** =`Only a layout or`, because of the use of the hidden **banner** feature on mobile devices, the **banner** will not be displayed when in mobile mode.
+**SCREEN SIZE 1** select **Min** =`320px`, **Max** = `550px`, display = `Hide`. Apply set **Apply to** =`Only a layout or widget following this widget`, because of the use of the hidden **banner** feature on mobile devices, the **banner** will not be displayed when in mobile mode.
 
 Drag & drop **Flex Banners | PapaThemes Beautify** widget into **Colum 1** below **Responsive** widget. Delete all other banners except the first one.
 
@@ -966,11 +961,6 @@ In **Advanced Options** set **Sort Order** = `2`.
 To display the additional information link in the product detail page:
 
 In **Products**, select the product you want to display the link. Find **Custom Fields**, created new custom field. Set **Custom Fields Name** = `__guide_popup` and **Custom Fields Value** = `<your page name>|<Page URL>` (example: `Nutrients & Directions|/nutrients-directions/`) then save.
-
-**Watch the instruction video:**
-
-(wait a resource)
-
 
 ### Video image product detail page
 
