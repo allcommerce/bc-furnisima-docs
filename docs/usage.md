@@ -54,9 +54,11 @@ Click on **background color** to change header color.
 
 The theme allow user to change **Logo** > **Position**  to `left`, `right` or `center`.
 
-**User Navigation** allows to change colors of text, text hover and dropdown have background, border, cart counter.
+**User Navigation** allows to change colors of text, text hover and dropdown have background, border, cart counter. To display **Phone** and **Currency** in header select `Show`
 
 **Top Bar** section allows to change color of this top bar.
+
+![Top Bar](img/top-bar.jpg)
 
 - **Background** :  You can change the background color of the top bar to your preference.
 
