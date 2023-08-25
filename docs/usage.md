@@ -58,13 +58,13 @@ The theme allow user to change **Logo** > **Position**  to `left`, `right` or `c
 
 **Top Bar** section allows to change color of this top bar.
 
-- **Background** : change background color of top bar you want
+- **Background** :  You can change the background color of the top bar to your preference.
 
-- **Text** : change text color of top bar you want
+- **Text** : You can modify the text color of the top bar according to your liking.
 
-- **Text hover** : change text hover color of top bar you want
+- **Text hover** :  You have the ability to change the color of the text when hovering over it in the top bar.
 
-- **Icon** : change icon color of top bar you want
+- **Icon** :  You can customize the color of the icons displayed in the top bar.
 #### Quick search
 
 **Quick Search** allows user to change the colors of the search form.
@@ -136,6 +136,9 @@ Before
 Affer:
 ![hidden-web-links](img/hidden-web-links.jpg)
 
+### Top Banner
+
+Go back to **Storefront** > **My Themes** > click **Customize** button beside the theme thumbnail. You can see the top banner appears above the header. To change the colors of the top banner, go to **Theme Styles** > **General** > **Top banners** section. Here you can change the text color and the background color.
 ### Main carousel
 
 ![main-carousel-manager](img/main-carousel-manager.jpg)
@@ -205,7 +208,7 @@ Mobile
 
 ![Categories](img/top-categories-mobile.jpg)
 
-Drag & drop the **Layout widget** to the position **home below carousel**. Select the layout change column to 1 set column 1 with background color you want.
+Drag & drop the **Layout widget** to the position **home below carousel**. Select the layout change column to 1 set **column 1** with background color you want.
 
 Drag & drop **Flex Banners | PapaThemes Beautify**, to the layout delete all the items except the first one then change to your image change **width** = `178px` and **height** = `246px`. In general tab change padding set value **Desktop** = `20 10 20 10`, **Tablet** = `15 10 15 10`, **Mobile** = `15 15 15 15`.
 
@@ -230,9 +233,7 @@ Mobile:
 
 ![bread-banner-mobile](img/bread-mobile.jpg)
 
-To create **Bread Banner**:
-
-Drag & drop Layout widget to the corresponding position, change **Column** = `1`, **Name** = `BREAD`.
+Drag & drop Layout widget to the corresponding position, change **Column** = `1`.
 
 Select **Column 1**, set **Padding** = `0 0 0 0`.
 
@@ -257,8 +258,6 @@ With out **Left banner**:
 
 Go to **Theme Styles** > **Home Page**, in the **Sections** field select **Product by category**.
 
-To create **Left banner**:
-
 Drag & drop the **Flex Banners | PapaThemes Beautify** widget to the corresponding position. Delete all other banners except the first one.
 
 Upload your image in **Image** field. Set **Image Width** = `304px` and **Image Height** =`466px`. You can change **Border radius** = `8px`.
@@ -279,8 +278,6 @@ In **Theme Styles** > **General** > **Link Colors** change color you want.
 Desktop :
 
 ![banner](img/banner.jpg)
-
-To create **Banner** :
 
 Drag & drop **Layout** widget to the corresponding position, change **Column** = 1, **Padding** = `0 0 0 0`
 
@@ -305,8 +302,6 @@ You can configure bestselling products section settings in **Page Builder** > **
 
 ![customer-review](img/review.jpg)
 
-To create **Customer Reviews** : 
-
 Drag & drop **Customer Reviews | PapaThemes Beautify** widget into **Colum 1**. Delete all other **review** except the first one.
 
 To edit **Review 1**, you can change the **Title**, **Content**, **Rating**, **Author** of **Review** to display, **Style for theme** select `Beautify Furniture`, unchecked **Display reviews in container div**.
@@ -328,8 +323,6 @@ Desktop :
 Mobile : 
 
 ![three banners mobile](img/three-banners-mobile.jpg)
-
-To create **Three Banners**:
 
 Drag & drop **Flex Banners | PapaThemes Chiara** widget into **Column 1** and duplicate **Banner 1** to 3 banners.
 
@@ -823,6 +816,7 @@ In **Page Builder** > **Theme Styles** > **Products** > **Product Page**:
 ### Custom tabs
 
 ![Custom-tab-sample](img\custom-tab-sample.jpg)
+
 To add the custom tabs and product pages, edit your product description, click on HTML button to open HTML Source Editor:
 
 ![Custom-tab](img\custom-tab.jpg)
