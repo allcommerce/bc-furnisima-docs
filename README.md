@@ -1,2 +1,2 @@
-# bc-Mooncat-docs
-Documentation for the Mooncat BigCommerce Theme by PapaThemes
+# bc-Antique-docs
+Documentation for the Antique BigCommerce Theme by PapaThemes
