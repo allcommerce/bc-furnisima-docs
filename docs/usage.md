@@ -28,7 +28,7 @@ Then click the Install buttons in turn to install all available widgets:
 
 ![install-papathemes-widgets](img/install-papathemes-widgets.jpg)
 
-Go to **Storefront** > **My Themes** > click **Customize** in dropdown menu of Mooncat theme to open Page Builder. Select any theme style to start:
+Go to **Storefront** > **My Themes** > click **Customize** in dropdown menu of Antique theme to open Page Builder. Select any theme style to start:
 
 ![click-theme-customize](img/click-theme-customize.jpg)
 
