@@ -36,7 +36,7 @@ Verify the widgets installed successfully if they appear in Page Builder:
 
 ![custom-widgets-appear](img/custom-widgets-appear.jpg)
 
-## Setting Up Furniture Style Home Page
+## Setting Up Furnisima Style Home Page
 
 To start customizing the theme, login to your admin panel, go to **Storefront** > **My Themes**, click **Customize** button next to theme thumbnail.
 
@@ -215,7 +215,7 @@ Paste the given code below to the HTML editor, then click Save HTML button.
 ```html
 <div class="list-ctgry">
   <a href="#" class="item-ctgry">
-      GAME DAY FURNITURE SALE
+      GAME DAY FURNISIMA SALE
   </a>
   <a href="#" class="item-ctgry">
     THE ENTRYWAY SALE
@@ -227,7 +227,7 @@ Paste the given code below to the HTML editor, then click Save HTML button.
     OUTDOOR WARM-UP SALE
   </a>
     <a href="#" class="item-ctgry">
-        GAME DAY FURNITURE SALE
+        GAME DAY FURNISIMA SALE
     </a>
   <a href="#" class="item-ctgry">
     THE ENTRYWAY SALE
@@ -239,7 +239,7 @@ Paste the given code below to the HTML editor, then click Save HTML button.
     OUTDOOR WARM-UP SALE
   </a>
   <a href="#" class="item-ctgry">
-      GAME DAY FURNITURE SALE
+      GAME DAY FURNISIMA SALE
   </a>
   <a href="#" class="item-ctgry">
     THE ENTRYWAY SALE
@@ -262,6 +262,10 @@ To insert the link, simply paste your desired link within the
 ### Featured Categories
 
 ![featured](img/featured.jpg)
+
+Drag & drop layout widget to region `Home Below Carousel` which is below homepage carousel, as picture below:
+
+![postion featured](img/featured-home-carousel.png)
 
 Drag and drop **Layout** widget to the corresponding position, change **Column** = `1`. Select **Column 1**, set **Padding** = `0 0 0 0`.
 
@@ -323,6 +327,29 @@ Drag & drop **Spacer** = `25px`.
 Drag & drop **Flex Banners | Papathemes Beautify** to the layout delete all the items except the first one then change to your image change **width** = `1000px` and **height** = `368px`. In **Settings** unchecked **Display banners in container div**
 
 The rest remains the same, only the position is changed.
+
+### Featured products
+
+![featured-products](img/feature-product.jpg)
+
+You can set featured products in **Products**, click the **star** icon on the same row to set the product as featured.
+
+Go back to **Page Builder** > **Theme Styles** > **Home Page**, make sure one of the **Sections** field has **Featured Products** selected. In **Featured products** section, you can change the **Heading**, **Number of products** to display, Number of product per row (**Columns**), changing **Display type** to `Carousel` or `Grid`, changing the **background color**, editing the link of **View all products**.
+
+### New Product
+
+![new-products](img/new-product.jpg)
+
+You can configure new products section settings in **Page Builder** > **Theme Styles** > **Home Page**, make sure one of the **Sections** field has **New Products** selected. In **New products** section, you can change the **Heading**, **Number of products** to display, Number of product per row (**Columns**), changing **Display type** to `Carousel` or `Grid`, changing the **background color**, editing the link of **View all products**.
+
+### Bestselling products
+
+![bestselling-products](img/best-selling-product.jpg)
+
+Bestselling products only display when your store has some order.
+
+You can configure bestselling products section settings in **Page Builder** > **Theme Styles** > **Home Page**, make sure one of the **Sections** field has **Popular Products** selected. In **Best-sellers products** section, you can change the **Heading**, **Number of products** to display, Number of product per row (**Columns**), changing **Display type** to `Carousel` or `Grid`, changing the **background color**, editing the link of **View all products**.
+
 ### Double Banner
 
 Desktop :
@@ -366,11 +393,50 @@ On **Flex Banners | PapaThemes Beautify** choose **Settings**
 In **carousel**, show **enable carousel** and click on setting **Items per slide** = `5`, **Items per slide (Tablet)** = `3` and **Items per slide (Mobile)** = `2`. Enable **show dots**.
 
 Duplicate **banner 1** to quantity that you want and update your image for each banner.
+
+### Product by category
+
+With **Left banner**:
+
+Desktop : 
+
+![Product by category](img/product-by-category.jpg)
+
+Drag & drop layout widget to region `Pbcst 0` which is below home below section3, as picture below:
+
+![Position widget product by category](img/position-product-by-category.jpg)
+
+With out **Left banner**:
+
+![Product by category](img/product-by-category-2.jpg)
+
+Go to **Theme Styles** > **Home Page**, in the **Sections** field select **Product by category**.
+
+Drag & drop the **Flex Banners | PapaThemes Beautify** widget to the corresponding position. Delete all other banners except the first one.
+
+Upload your image in **Image** field. Set **Image Width** = `326px` and **Image Height** =`508px`.
+
+If you want to show different image on mobile please enable **show different image on mobile** upload your image in **Image (Mobile)** field. Set **Image Width (Mobile)** = `401px` and **Image Height (Mobile)** = `295px`.
+
+In **Content**, hide **Heading text** if your banner already has text.
+
+In **General** > **Padding** panel, set `0` for all values then set value `24` for **bottom (Mobile)**.
+
+Select the **Column 1** set padding = `0 0 0 0`.
+
+To change **Border color of the title**:
+
+In **Theme Styles** > **General** > **Link Colors** change color you want.
+
 ### Slider Furnisima
 
 ![Slider Furnisima](img/slider-category.jpg)
 
-Drag and drop **Layout** widget to the corresponding position, change **Column** = `1`. Select **Column 1**, set **Padding** = `0 0 0 0`.
+Drag & drop layout widget to region `Pbcst Below 0` which is below Pbcst4, as picture below:
+
+![Product by category below](img/pbcst-below.jpg)
+
+Select **Column 1**, set **Padding** = `0 0 0 0`.
 
 Drag & drop **Flex Banners | PapaThemes Beautify** widget to layout. Delete all banner **except banner 1**.
 
@@ -401,6 +467,14 @@ On **Flex Banners | PapaThemes Beautify** choose **Settings** :
 **Style for theme** = `Kansha Sport`, unchecked **Display banners in container div**.
 
 Choose **Carousel** turn on **Enable Carousel**. In carousel setting, **Items per slide** and **Items per slide (Tablet)** = `4`, **Items per slider (Mobile)** = `2`, unchecked **Show arrows**.
+
+### Recent blog posts
+
+![edit-recent-blog](img/edit-recent-blog.jpg)
+
+You can add blog posts in Storefront > Blog. Click the **+** button to add a new blog post. Make sure **Blog Visibility** is `on`.
+
+To display the recent blog posts on the home page, go to Page Builder. In Theme Styles > Home Page, make sure one of Sections has **Recent Blog** selected. Scroll down the Recent Blog section, you can configure **Heading**, **Number of posts** to display.
 
 ### Live Help
 
@@ -438,6 +512,26 @@ Tick active **Show second text**, select **Second text style** = `Custom`, **Fon
 
 Duplicate **Callout 1** to 4 callout.
 
+### Instagram photos
+
+![edit-instagram](img/edit-instagram.png)
+
+To display your Instagram photos, open <https://instagram.papathemes.com/> Follow the instruction on this page to [Connect your Facebook Page with your Instagram account](https://www.facebook.com/business/help/898752960195806). Then click **Login With Facebook** button and follow the further steps to authorize access permission. Click **Show Embedding Code** button to generate the code embedding to your web store. Choose **Preset** = `Carousel` and select **LazyLoad**.
+
+Copy all the code appear in Step 1 & Step 2. For example:
+
+```html
+<script>!function(){var a=document.createElement("script");a.defer=!0,a.src="https://papathemes.s3.amazonaws.com/instagramapp/assets/js/embed-1.0.1.js",a.onload=function(){PapathemesInstagramApp.init({account_id:"****************",element_id:"papainstagram-render",limit:"20",preset:"grid",lazyload:"false"})},document.body.appendChild(a)}();</script>
+
+<div id="papainstagram-render"></div>
+```
+
+Go back to your store Page Builder. Drag & drop the HTML widget to the corresponding position. Paste the generated code above to the HTML editor, and click **Save HTML** button. Your Instagram photos should display like our demo store.
+
+Please note that the app only updates your latest uploaded photos every 6 hours.
+
+To create the title, drag & drop the **Section Heading** widget to above the Instagram photos. Set **Padding** = `0 0 28 0` and **Padding (Mobile)** = `18 0 18 0`.
+
 ### Newsletter
 
 ![Newsletter](img/newsletter.jpg)
@@ -455,6 +549,21 @@ In **Page Builder** > **Theme Styles** > **Footer**, you can configure the newsl
 **Payment Icons** allows to select which payment icons to display.
 
 **Copyright** allows to configure the copyright text.
+
+### Display custom footer links
+
+In **Page builder** > **Custom Widget** find **Footer links | PapaThemes Beautify** widget then drag and drop the widget to corresponding position in Footer.
+
+Select the **Column 1** and change **padding** to `0`
+
+In **design** you can type your link content and click on the **insert/edit link** button as picture below:
+
+![footer-links](img/footer-link-widget.jpg)
+
+In the popup window, copy your web link to `URL`. On the **Open links..** field you can select how your link could be open in **New Window** or **Current Window**
+
+![Insert-links](img/insert-links.jpg)
+
 ## Customizing Products Display
 
 ### Product Card
