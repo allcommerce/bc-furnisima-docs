@@ -36,7 +36,7 @@ Verify the widgets installed successfully if they appear in Page Builder:
 
 ![custom-widgets-appear](img/custom-widgets-appear.jpg)
 
-## Setting Up Furniture Style Home Page
+## Setting Up Furnisima Style Home Page
 
 To start customizing the theme, login to your admin panel, go to **Storefront** > **My Themes**, click **Customize** button next to theme thumbnail.
 
@@ -215,7 +215,7 @@ Paste the given code below to the HTML editor, then click Save HTML button.
 ```html
 <div class="list-ctgry">
   <a href="#" class="item-ctgry">
-      GAME DAY FURNITURE SALE
+      GAME DAY FURNISIMA SALE
   </a>
   <a href="#" class="item-ctgry">
     THE ENTRYWAY SALE
@@ -227,7 +227,7 @@ Paste the given code below to the HTML editor, then click Save HTML button.
     OUTDOOR WARM-UP SALE
   </a>
     <a href="#" class="item-ctgry">
-        GAME DAY FURNITURE SALE
+        GAME DAY FURNISIMA SALE
     </a>
   <a href="#" class="item-ctgry">
     THE ENTRYWAY SALE
@@ -239,7 +239,7 @@ Paste the given code below to the HTML editor, then click Save HTML button.
     OUTDOOR WARM-UP SALE
   </a>
   <a href="#" class="item-ctgry">
-      GAME DAY FURNITURE SALE
+      GAME DAY FURNISIMA SALE
   </a>
   <a href="#" class="item-ctgry">
     THE ENTRYWAY SALE
